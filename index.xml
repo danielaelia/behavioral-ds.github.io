@@ -339,15 +339,15 @@ cd / # This will take you to the root directory where all Data is stored.
 We have four compute resources and each has attached a storage resource.&lt;/p>
 &lt;h2 id="compute-servers-and-frameworks">Compute servers and frameworks&lt;/h2>
 &lt;h3 id="ihpc-servers">iHPC servers&lt;/h3>
-&lt;p>&lt;strong>Link to resource&lt;/strong>: &lt;a href="ihpc.research.uts.edu.au">ihpc.research.uts.edu.au&lt;/a> (requires &lt;a href="https://vpn.uts.edu.au/">UTS VPN&lt;/a>)&lt;/p>
+&lt;p>&lt;strong>Link to resource&lt;/strong>: &lt;a href="https://ihpc.research.uts.edu.au/">ihpc.research.uts.edu.au&lt;/a> (requires &lt;a href="https://vpn.uts.edu.au/">UTS VPN&lt;/a>)&lt;/p>
 &lt;p>&lt;strong>Quick description&lt;/strong>: iHPC stands for Interactive High-Performance Computing. In a nutshell, these are very large machines (around 60 cores, and terabytes of memory). The machines are hosted in UTS and require both a UTS affiliation and special access. The servers are grouped into clusters, some of which require special access.&lt;/p>
 &lt;p>Our group has a private cluster called &lt;em>hephaestos&lt;/em> which currently contains two machines (see print screen below). Our private cluster is accessible to BDS members only.&lt;/p>
 &lt;p>&lt;img src="https://www.behavioral-ds.science/extra/onboarding_content/compute.png" width="100%" />&lt;/p>
-&lt;p>&lt;strong>Getting access&lt;/strong>: Request an iHPC account (see &lt;a href="ihpc.research.uts.edu.au">ihpc.research.uts.edu.au&lt;/a> for instructions). Mention the Behavioral Data Science group and Andrei in your request to be automatically added to the hephaestos access lists. &lt;strong>Make sure you read the documentation!&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Getting access&lt;/strong>: Request an iHPC account (see &lt;a href="https://ihpc.research.uts.edu.au/">ihpc.research.uts.edu.au&lt;/a> for instructions). Mention the Behavioral Data Science group and Andrei in your request to be automatically added to the hephaestos access lists. &lt;strong>Make sure you read the documentation!&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Use case&lt;/strong>: the iHPC is designed for prototyping that requires large machines (Jupyter Notebook or RStudio), or for intermediary-size compute (for larger size see &lt;a href="#HPCC">UTS HPC&lt;/a> and &lt;a href="#NCI">NCI&lt;/a>). You can use iHPC using its Graphical User Interface (GUI) via NoMachine. You can also connect via console using:&lt;/p>
-&lt;p>&lt;code>ssh &amp;lt;user&amp;gt;@hephaestos1.eng.uts.edu.au&lt;/code>&lt;/p>
+&lt;p>&lt;code>ssh &amp;lt;user&amp;gt;@hephaestos1.ihpc.uts.edu.au&lt;/code>&lt;/p>
 &lt;p>For use with &lt;em>Jupyter Notebook&lt;/em> or &lt;em>RStudio Server&lt;/em>, you can redirect ports via SSH tunneling. Assuming the Jupyter Notebook/RStudio Server listens on port 8282, you can redirect that port by connecting to hephaestos1 using:&lt;/p>
-&lt;p>&lt;code>ssh -L 8282:localhost:8282 &amp;lt;user&amp;gt;@hephaestos1.eng.uts.edu.au&lt;/code>&lt;/p>
+&lt;p>&lt;code>ssh -L 8282:localhost:8282 &amp;lt;user&amp;gt;@hephaestos1.ihpc.uts.edu.au&lt;/code>&lt;/p>
 &lt;p>after which you can connect the browser to your local machine to &lt;code>https://localhost:8282&lt;/code> and access the kernel on the distant machines. See &lt;a href="https://www.ssh.com/academy/ssh/tunneling/example">here for more details and examples&lt;/a>.&lt;/p>
 &lt;p>&lt;strong>More details&lt;/strong>: For detailed instructions on setting up remote Jupyter notebooks on iHPC, check out &lt;a href="https://www.behavioral-ds.science/extra/ihpc_guide">this guide&lt;/a>.
 &lt;br/>&lt;br/>&lt;/p>
